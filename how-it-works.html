@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works — MycoMind</title>
+  <meta name="description" content="How psilocybin works in the brain: serotonin receptors, DMN disruption, neural entropy, amygdala modulation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🍄 Myco<span>Mind</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="mental-health.html">Mental Health</a></li>
+        <li><a href="physical-health.html">Physical Health</a></li>
+        <li><a href="how-it-works.html" class="active">How It Works</a></li>
+        <li><a href="protocols.html">Protocols</a></li>
+        <li><a href="science.html">Science</a></li>
+        <li><a href="my-recipe.html">My Recipe</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="how-it-works.html" class="active-lang">EN</a>
+        <a href="es/how-it-works.html">ES</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="mechanism-grid">
+        <div class="mech-card">
+          <div class="mech-icon">🧬</div>
+          <h4>Prodrug Conversion</h4>
+          <p>Psilocybin converts to <strong>psilocin</strong> in the gut. Psilocin is structurally similar to serotonin and acts primarily on <strong>5-HT2A receptors</strong>.</p>
+        </div>
+        <div class="mech-card">
+          <div class="mech-icon">🌐</div>
+          <h4>DMN Disruption</h4>
+          <p>Breaks rigid, ruminating thought patterns in the <strong>Default Mode Network</strong> — the brain circuit linked to depression and self-critical loops.</p>
+        </div>
+        <div class="mech-card">
+          <div class="mech-icon">🔗</div>
+          <h4>Enhanced Connectivity</h4>
+          <p>Promotes more <strong>flexible, dynamic communication</strong> across brain networks that don't normally interact.</p>
+        </div>
+        <div class="mech-card">
+          <div class="mech-icon">🎲</div>
+          <h4>Brain Entropy</h4>
+          <p>Temporarily increases neural entropy — allowing <strong>new patterns of thought</strong> and disrupting maladaptive cognitive loops.</p>
+        </div>
+        <div class="mech-card">
+          <div class="mech-icon">❤️</div>
+          <h4>Amygdala Modulation</h4>
+          <p>Restores <strong>emotional responsiveness</strong> blunted by depression by modulating amygdala reactivity to emotional stimuli.</p>
+        </div>
+        <div class="mech-card">
+          <div class="mech-icon">🛡️</div>
+          <h4>Anti-Inflammation</h4>
+          <p>Reduces <strong>neuroinflammation</strong> via 5-HT2A pathway at sub-hallucinogenic doses — relevant to aging and neurodegenerative disease.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-sources">
+    <div class="container">
+      <h3>Sources</h3>
+      <ol class="references-list">
+        <li>Carhart-Harris RL, et al. (2017). "Psilocybin for treatment-resistant depression: fMRI-measured brain mechanisms." <em>Scientific Reports</em>, 7:13187. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5640601" target="_blank" rel="noopener">PMC5640601</a></li>
+        <li>Siegel JS, et al. (2024). "Psilocybin desynchronizes the human brain." <em>Nature</em>, 632:131–138. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11291293" target="_blank" rel="noopener">PMC11291293</a></li>
+        <li>Kraehenmann R, et al. (2015). "Psilocybin-Induced Decrease in Amygdala Reactivity." <em>Biological Psychiatry</em>, 78(8):572–581.</li>
+        <li>Nichols DE, et al. (2017). Anti-inflammatory effects of serotonergic psychedelics via 5-HT2A agonism.</li>
+        <li>Flanagan TW &amp; Nichols CD (2022). Psychedelic anti-inflammatory mechanisms.</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="disclaimer">
+        <h4>⚕️ Disclaimer</h4>
+        <p>This content is for <strong>educational and informational purposes only</strong>. It does not constitute medical advice. Psilocybin mushrooms are controlled substances in most jurisdictions. Always consult a healthcare professional.</p>
+      </div>
+      <div class="footer-bottom">
+        <p class="logo-footer">🍄 Myco<span>Mind</span></p>
+        <p>&copy; 2026 MycoMind. Evidence-based. Not medical advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    document.querySelectorAll('.nav-links a').forEach(l => l.addEventListener('click', () => links.classList.remove('open')));
+  </script>
+</body>
+</html>

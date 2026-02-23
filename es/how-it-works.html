@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cómo Funciona — MycoMind</title>
+  <meta name="description" content="Cómo actúa la psilocibina en el cerebro: receptores de serotonina, Red por Defecto, entropía neuronal, modulación de la amígdala." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🍄 Myco<span>Mind</span></a>
+      <button class="nav-toggle" aria-label="Menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="mental-health.html">Salud Mental</a></li>
+        <li><a href="physical-health.html">Salud Física</a></li>
+        <li><a href="how-it-works.html" class="active">Cómo Funciona</a></li>
+        <li><a href="protocols.html">Protocolos</a></li>
+        <li><a href="science.html">Ciencia</a></li>
+        <li><a href="my-recipe.html">Mi Receta</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="../how-it-works.html">EN</a>
+        <a href="how-it-works.html" class="active-lang">ES</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="mechanism-grid">
+        <div class="mech-card">
+          <div class="mech-icon">🧬</div>
+          <h4>Conversión del Profármaco</h4>
+          <p>La psilocibina se convierte en <strong>psilocina</strong> en el intestino. La psilocina es estructuralmente similar a la serotonina y actúa principalmente sobre los <strong>receptores 5-HT2A</strong>.</p>
+        </div>
+        <div class="mech-card">
+          <div class="mech-icon">🌐</div>
+          <h4>Disrupción de la Red por Defecto</h4>
+          <p>Rompe patrones de pensamiento rígidos y rumiantes en la <strong>Red por Defecto (DMN)</strong> — el circuito cerebral vinculado a la depresión y los bucles autocríticos.</p>
+        </div>
+        <div class="mech-card">
+          <div class="mech-icon">🔗</div>
+          <h4>Conectividad Mejorada</h4>
+          <p>Promueve una <strong>comunicación más flexible y dinámica</strong> entre redes cerebrales que normalmente no interactúan.</p>
+        </div>
+        <div class="mech-card">
+          <div class="mech-icon">🎲</div>
+          <h4>Entropía Cerebral</h4>
+          <p>Aumenta temporalmente la entropía neuronal — permitiendo <strong>nuevos patrones de pensamiento</strong> y rompiendo bucles cognitivos desadaptativos.</p>
+        </div>
+        <div class="mech-card">
+          <div class="mech-icon">❤️</div>
+          <h4>Modulación de la Amígdala</h4>
+          <p>Restaura la <strong>capacidad de respuesta emocional</strong> embotada por la depresión, modulando la reactividad de la amígdala ante estímulos emocionales.</p>
+        </div>
+        <div class="mech-card">
+          <div class="mech-icon">🛡️</div>
+          <h4>Antiinflamación</h4>
+          <p>Reduce la <strong>neuroinflamación</strong> a través de la vía 5-HT2A a dosis sub-alucinógenas — relevante para el envejecimiento y las enfermedades neurodegenerativas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-sources">
+    <div class="container">
+      <h3>Fuentes</h3>
+      <ol class="references-list">
+        <li>Carhart-Harris RL, et al. (2017). <em>Scientific Reports</em>, 7:13187. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5640601" target="_blank" rel="noopener">PMC5640601</a></li>
+        <li>Siegel JS, et al. (2024). <em>Nature</em>, 632:131–138. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11291293" target="_blank" rel="noopener">PMC11291293</a></li>
+        <li>Kraehenmann R, et al. (2015). <em>Biological Psychiatry</em>, 78(8):572–581.</li>
+        <li>Nichols DE, et al. (2017). Efectos antiinflamatorios de psicodélicos serotoninérgicos vía agonismo 5-HT2A.</li>
+        <li>Flanagan TW y Nichols CD (2022). Mecanismos antiinflamatorios de psicodélicos.</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="disclaimer">
+        <h4>⚕️ Aviso Legal</h4>
+        <p>Este contenido es <strong>únicamente informativo y educativo</strong>. No constituye consejo médico. Las setas de psilocibina son sustancias controladas en la mayoría de jurisdicciones. Consulta siempre con un profesional sanitario.</p>
+      </div>
+      <div class="footer-bottom">
+        <p class="logo-footer">🍄 Myco<span>Mind</span></p>
+        <p>&copy; 2026 MycoMind. Basado en evidencia. No es consejo médico.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    document.querySelectorAll('.nav-links a').forEach(l => l.addEventListener('click', () => links.classList.remove('open')));
+  </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protocols — MycoMind</title>
+  <meta name="description" content="Psilocybin microdosing protocols: Fadiman, Stamets Stack, dosing reference chart." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🍄 Myco<span>Mind</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="mental-health.html">Mental Health</a></li>
+        <li><a href="physical-health.html">Physical Health</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="protocols.html" class="active">Protocols</a></li>
+        <li><a href="science.html">Science</a></li>
+        <li><a href="my-recipe.html">My Recipe</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="protocols.html" class="active-lang">EN</a>
+        <a href="es/protocols.html">ES</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="protocol-grid">
+        <div class="protocol-card">
+          <h4>Fadiman Protocol</h4>
+          <div class="protocol-schedule">1 day on · 2 days off</div>
+          <p>Most widely used. Developed by Dr. James Fadiman. Allows full tolerance reset between doses.</p>
+        </div>
+        <div class="protocol-card">
+          <h4>Stamets Stack</h4>
+          <div class="protocol-schedule">4 days on · 3 days off</div>
+          <p>Combines psilocybin mushrooms + Lion's Mane + Niacin (B3). Some evidence of psychomotor benefits in older adults.</p>
+        </div>
+        <div class="protocol-card">
+          <h4>Every Other Day</h4>
+          <div class="protocol-schedule">1 day on · 1 day off</div>
+          <p>Less common, higher frequency. May accelerate tolerance buildup.</p>
+        </div>
+      </div>
+
+      <h3 class="table-heading">Dosing Reference</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Dried Mushrooms</th><th>Pure Psilocybin</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Microdose</strong></td>
+              <td>0.1 – 0.3 g</td>
+              <td>1 – 3 mg</td>
+            </tr>
+            <tr>
+              <td>Low dose (perceptible)</td>
+              <td>0.5 – 1.0 g</td>
+              <td>5 – 10 mg</td>
+            </tr>
+            <tr>
+              <td>Moderate dose</td>
+              <td>1.0 – 2.5 g</td>
+              <td>10 – 25 mg</td>
+            </tr>
+            <tr>
+              <td>High dose</td>
+              <td>3.0 – 5.0 g</td>
+              <td>25 – 40 mg</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-sources">
+    <div class="container">
+      <h3>Sources</h3>
+      <ol class="references-list">
+        <li>Fadiman J (2011). <em>The Psychedelic Explorer's Guide</em>. Park Street Press.</li>
+        <li>Rootman JM, et al. (2022). <em>Scientific Reports</em>, 12:11091. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9246852/" target="_blank" rel="noopener">PMC9246852</a> — Stamets Stack data.</li>
+        <li>Polito V &amp; Liknaitzky P (2022). Systematic review of psychedelic microdosing — protocol comparisons.</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="disclaimer">
+        <h4>⚕️ Disclaimer</h4>
+        <p>This content is for <strong>educational and informational purposes only</strong>. It does not constitute medical advice. Psilocybin mushrooms are controlled substances in most jurisdictions. Always consult a healthcare professional.</p>
+      </div>
+      <div class="footer-bottom">
+        <p class="logo-footer">🍄 Myco<span>Mind</span></p>
+        <p>&copy; 2026 MycoMind. Evidence-based. Not medical advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    document.querySelectorAll('.nav-links a').forEach(l => l.addEventListener('click', () => links.classList.remove('open')));
+  </script>
+</body>
+</html>

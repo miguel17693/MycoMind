@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MycoMind — La Ciencia de las Setas de Psilocibina</title>
+  <meta name="description" content="Guía basada en evidencia sobre la microdosificación con setas de psilocibina para la salud mental y física." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🍄 Myco<span>Mind</span></a>
+      <button class="nav-toggle" aria-label="Menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="mental-health.html">Salud Mental</a></li>
+        <li><a href="physical-health.html">Salud Física</a></li>
+        <li><a href="how-it-works.html">Cómo Funciona</a></li>
+        <li><a href="protocols.html">Protocolos</a></li>
+        <li><a href="science.html">Ciencia</a></li>
+        <li><a href="my-recipe.html">Mi Receta</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="../index.html">EN</a>
+        <a href="index.html" class="active-lang">ES</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Guía Basada en Evidencia</p>
+      <h1>La Ciencia de las<br /><em>Setas de Psilocibina</em></h1>
+      <p class="hero-sub">Explorando lo que la investigación realmente dice sobre la microdosificación para la salud mental y física.</p>
+    </div>
+  </header>
+
+  <section class="intro-section">
+    <div class="container">
+      <div class="intro-card">
+        <h2>¿Qué es la microdosificación con psilocibina?</h2>
+        <p>La microdosificación consiste en tomar regularmente <strong>dosis sub-perceptibles</strong> de setas que contienen psilocibina — normalmente <strong>0,1 a 0,3 g de setas secas</strong> (~1–3 mg de psilocibina) — siguiendo un calendario estructurado. El objetivo no es alucinar, sino experimentar cambios sutiles en el estado de ánimo, la cognición y el procesamiento emocional a lo largo del tiempo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Explora la Investigación</h2>
+        <p class="section-subtitle">Profundiza en cada tema</p>
+      </div>
+      <div class="explore-grid">
+        <a href="mental-health.html" class="explore-card">
+          <span class="explore-icon">🧠</span>
+          <h3>Salud Mental</h3>
+          <p>Depresión, ansiedad, estado de ánimo — beneficios y riesgos según los últimos estudios.</p>
+        </a>
+        <a href="physical-health.html" class="explore-card">
+          <span class="explore-icon">💪</span>
+          <h3>Salud Física</h3>
+          <p>Qué ocurre en el cuerpo — seguridad, molestias, tolerancia y envejecimiento.</p>
+        </a>
+        <a href="how-it-works.html" class="explore-card">
+          <span class="explore-icon">⚙️</span>
+          <h3>Cómo Funciona</h3>
+          <p>De la seta al cerebro — los mecanismos detrás de los efectos de la psilocibina.</p>
+        </a>
+        <a href="protocols.html" class="explore-card">
+          <span class="explore-icon">📋</span>
+          <h3>Protocolos</h3>
+          <p>Calendarios comunes de microdosificación y referencia de dosis.</p>
+        </a>
+        <a href="science.html" class="explore-card">
+          <span class="explore-icon">🔬</span>
+          <h3>La Ciencia</h3>
+          <p>Estudios clave, ensayos clínicos e investigación preclínica de un vistazo.</p>
+        </a>
+        <a href="my-recipe.html" class="explore-card">
+          <span class="explore-icon">🍵</span>
+          <h3>Mi Receta</h3>
+          <p>Lemon tek + agua caliente — sin náuseas, inicio más rápido, viajes más cortos.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="disclaimer">
+        <h4>⚕️ Aviso Legal</h4>
+        <p>Este contenido es <strong>únicamente informativo y educativo</strong>. No constituye consejo médico. Las setas de psilocibina son sustancias controladas en la mayoría de jurisdicciones. Consulta siempre con un profesional sanitario.</p>
+      </div>
+      <div class="footer-bottom">
+        <p class="logo-footer">🍄 Myco<span>Mind</span></p>
+        <p>&copy; 2026 MycoMind. Basado en evidencia. No es consejo médico.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    document.querySelectorAll('.nav-links a').forEach(l => l.addEventListener('click', () => links.classList.remove('open')));
+  </script>
+</body>
+</html>

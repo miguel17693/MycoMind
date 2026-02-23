@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Recipe — MycoMind</title>
+  <meta name="description" content="A practical preparation method for psilocybin mushrooms: lemon tek + hot water extraction for better absorption, less nausea, and shorter trips." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🍄 Myco<span>Mind</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="mental-health.html">Mental Health</a></li>
+        <li><a href="physical-health.html">Physical Health</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="protocols.html">Protocols</a></li>
+        <li><a href="science.html">Science</a></li>
+        <li><a href="my-recipe.html" class="active">My Recipe</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="my-recipe.html" class="active-lang">EN</a>
+        <a href="es/my-recipe.html">ES</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="recipe-block">
+
+        <h3>🍄 Psilocybin Lemon-Hot Water Extraction</h3>
+        <p class="recipe-intro">This is a personal recipe that has consistently eliminated digestive issues, improved the quality of the experience, and reduced total trip time from ~8 hours to ~6. It's designed for <strong>standard doses</strong> (1–3.5 g dried), not microdoses.</p>
+
+        <ol class="recipe-list">
+          <li>
+            <strong>Grind to powder.</strong> Weigh your dose, then grind your dried mushrooms to a fine powder using a coffee grinder, blender, or mortar.
+          </li>
+          <li>
+            <strong>Lemon tek — 15 to 20 minutes.</strong> Put the powder in a glass and squeeze fresh lemon juice over it until the powder is <em>completely covered</em>. Stir it once and let it sit for 15–20 minutes. The citric acid begins converting psilocybin into psilocin (the active form) — the same conversion your stomach would do, but outside the body.
+          </li>
+          <li>
+            <strong>Boil water, wait one minute, then pour.</strong> Heat water in the microwave until it boils. Let it sit for <strong>about a minute</strong> to drop slightly below 100°C, then pour it into the glass over the lemon-mushroom mix. This extracts the psilocin into the liquid and breaks down the mushroom material further.
+          </li>
+          <li>
+            <strong>Let it sit another 15 minutes.</strong> Let the whole thing steep like a tea. This gives the hot water time to fully extract the remaining compound from the mushroom powder.
+          </li>
+          <li>
+            <strong>Blend it all — mushroom included.</strong> Pour the whole thing (liquid + mushroom material) into a blender with <strong>cocoa, sugar, dates, honey, cinnamon</strong> — whatever you like to kill the mushroom flavour. Blend until smooth. Drink it all.
+          </li>
+        </ol>
+
+        <div class="recipe-note">
+          <h4>Why blend instead of strain?</h4>
+          <p>Some active compound likely stays bound in the mushroom material even after extraction. Blending everything in guarantees <strong>you're getting 100% of what's there</strong>. The blending also breaks down the chitin (mushroom cell walls) mechanically, which is the main cause of nausea — so you still avoid the stomach issues without losing potency.</p>
+        </div>
+
+        <div class="recipe-note">
+          <h4>What to expect</h4>
+          <p>Onset in <strong>15–30 minutes</strong> (vs 45–90 with raw mushrooms). The peak is more focused and concentrated. Total trip ~<strong>6 hours</strong> instead of 8. Come-up can feel more sudden — that's normal, it levels out. Virtually no nausea or GI discomfort.</p>
+        </div>
+
+        <div class="recipe-note recipe-warning">
+          <h4>⚠️ Heads up</h4>
+          <p>This method hits <strong>harder and faster</strong>. If you're new, dose lower than you think. Set, setting, and having someone you trust nearby always matter. This is a preparation method, not medical advice.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="page-sources">
+    <div class="container">
+      <h3>Background</h3>
+      <ol class="references-list">
+        <li>Lemon tek is a widely-practiced folk preparation method. The citric acid dephosphorylation mechanism is consistent with known psilocybin chemistry (Horita &amp; Weber, 1961).</li>
+        <li>Psilocybin thermal stability: Gotvaldová et al. (2021). <em>Drug Testing and Analysis</em>, 13(2):439–446.</li>
+        <li>Oral bioavailability of psilocybin as psilocin: 52.7 ± 20.4% (Dodd et al., 2023; Hasler et al., 1997). Extraction methods aim to improve on this.</li>
+        <li>Personal experience and community-reported outcomes.</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="disclaimer">
+        <h4>⚕️ Disclaimer</h4>
+        <p>This content is for <strong>educational and informational purposes only</strong>. It does not constitute medical advice. Psilocybin mushrooms are controlled substances in most jurisdictions. Always consult a healthcare professional.</p>
+      </div>
+      <div class="footer-bottom">
+        <p class="logo-footer">🍄 Myco<span>Mind</span></p>
+        <p>&copy; 2026 MycoMind. Evidence-based. Not medical advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    document.querySelectorAll('.nav-links a').forEach(l => l.addEventListener('click', () => links.classList.remove('open')));
+  </script>
+</body>
+</html>

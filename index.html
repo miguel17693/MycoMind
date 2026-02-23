@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MycoMind — The Science of Psilocybin Mushrooms</title>
+  <meta name="description" content="Evidence-based guide to psilocybin mushroom microdosing for mental and physical health." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🍄 Myco<span>Mind</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="mental-health.html">Mental Health</a></li>
+        <li><a href="physical-health.html">Physical Health</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="protocols.html">Protocols</a></li>
+        <li><a href="science.html">Science</a></li>
+        <li><a href="my-recipe.html">My Recipe</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="index.html" class="active-lang">EN</a>
+        <a href="es/index.html">ES</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Evidence-Based Guide</p>
+      <h1>The Science of<br /><em>Psilocybin Mushrooms</em></h1>
+      <p class="hero-sub">Exploring what research actually says about microdosing for mental and physical health.</p>
+    </div>
+  </header>
+
+  <section class="intro-section">
+    <div class="container">
+      <div class="intro-card">
+        <h2>What Is Psilocybin Microdosing?</h2>
+        <p>Microdosing involves regularly taking <strong>sub-perceptible doses</strong> of psilocybin-containing mushrooms — typically <strong>0.1 to 0.3g of dried mushrooms</strong> (~1–3mg psilocybin) — on a structured schedule. The goal is not to hallucinate, but to experience subtle shifts in mood, cognition, and emotional processing over time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Explore the Research</h2>
+        <p class="section-subtitle">Dive into each topic</p>
+      </div>
+      <div class="explore-grid">
+        <a href="mental-health.html" class="explore-card">
+          <span class="explore-icon">🧠</span>
+          <h3>Mental Health</h3>
+          <p>Depression, anxiety, mood — benefits and risks from the latest studies.</p>
+        </a>
+        <a href="physical-health.html" class="explore-card">
+          <span class="explore-icon">💪</span>
+          <h3>Physical Health</h3>
+          <p>What happens in the body — safety, discomfort, tolerance, and aging.</p>
+        </a>
+        <a href="how-it-works.html" class="explore-card">
+          <span class="explore-icon">⚙️</span>
+          <h3>How It Works</h3>
+          <p>From mushroom to brain — the mechanisms behind psilocybin's effects.</p>
+        </a>
+        <a href="protocols.html" class="explore-card">
+          <span class="explore-icon">📋</span>
+          <h3>Protocols</h3>
+          <p>Common microdosing schedules and dosing reference.</p>
+        </a>
+        <a href="science.html" class="explore-card">
+          <span class="explore-icon">🔬</span>
+          <h3>The Science</h3>
+          <p>Key studies, clinical trials, and preclinical research at a glance.</p>
+        </a>
+        <a href="my-recipe.html" class="explore-card">
+          <span class="explore-icon">🍵</span>
+          <h3>My Recipe</h3>
+          <p>Lemon tek + hot water prep — no nausea, faster onset, shorter trips.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="disclaimer">
+        <h4>⚕️ Disclaimer</h4>
+        <p>This content is for <strong>educational and informational purposes only</strong>. It does not constitute medical advice. Psilocybin mushrooms are controlled substances in most jurisdictions. Always consult a healthcare professional.</p>
+      </div>
+      <div class="footer-bottom">
+        <p class="logo-footer">🍄 Myco<span>Mind</span></p>
+        <p>&copy; 2026 MycoMind. Evidence-based. Not medical advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => links.classList.remove('open'));
+    });
+  </script>
+</body>
+</html>
